@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+        <!--jQuery library--> 
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!--Latest compiled and minified JavaScript--> 
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>Virtual Medical Adviser</title>
+        <link href="style.css" rel="stylesheet" type="text/css">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Virtual Medical Adviser</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <style>
+            .bg {
+  /* The image used */
+  background-image: url("img/bgforcal.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a{
+    color:#0000ff;
+}
+a:hover{
+    color:#800080;
+}
+a:visited{
+    color:#800080;
+}
+p{
+    font-family: courier
+}
+        </style>
+    </head>
+    <body>
+  
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <ul>
+                    <li><a class="navbar-brand" href="index.html">Virtual Medical Adviser</a></li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        
+                        <li><a href="doctor.html"><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Consult Doctor</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--<div class="content">
+            <div class="b-image">
+                <center>
+                    <div class="inner-banner-image">
+                        <div class="b_content"></div>
+                    </div>
+                </center>
+            </div>
+        </div>
+             -->
+             <div class="bg">
+                 <center>
+                 <div class="b_content">
+        
+        <!--<div class="container-fluid">
+            <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
+                        <h2>BP Calculator</h2>
+                        <br><br>
+                        <form class="form-horizontal">                           
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="age">Age:</label>
+				<div class="col-sm-10">
+                                    <input type="number" class="form-control" pattern="[0-9]" id="age" placeholder="Enter  your age" name="age" required>
+                                </div>
+			    </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="gender">Gender:</label>
+                                <div class="col-sm-10">
+                                <input type="radio" name="radsex" id="radsex" value="male" checked="checked" /> Male  <input type="radio" name="radsex" id="radsex" value="female" /> Female</td>
+                                </div>
+                            </div>
+                           
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="systolic bp">Systolic BP:</label>
+                                <div class="col-sm-10">
+                                <input type="number" class="form-control" id="systolic-bp" placeholder="Systolic BP"  name="systolic bp" required><p>in mm/Hg</p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="diastolic bp">Diastolic BP:</label>
+                                <div class="col-sm-10">
+                                <input type="number" class="form-control" id="diastolic-bp" placeholder="Diastolic BP" name="diastolic bp" required><p>in mm/Hg</p>
+                                </div> 
+                            </div>
+                            <div class="form_group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="button" name="submit" class="btn btn-primary" onclick="myFunction()" >Submit</button>
+                            </div>
+                            </div>-->
+        <center><h1><span style="color:#ffffff">BP calculator</span></h1></center><br>
+<center>
+    <form name="regform">
+       
+        <div><span style="color:#ffffff">NAME:</span><input id="nameid" type="text" pattern="[a-z]" name="FirstName" required></div><br>
+        <div><span style="color:#ffffff">AGE:</span> <input type="number" id="ageid" name="age" required></div><br>
+        <div><span style="color:#ffffff">GENDER:</span> <input type="radio" id="maleid" name="gender" value="male" required checked> <span style="color:#ffffff">Male</span>
+            <input type="radio" id="femaleid" name="gender" value="female" required> <span style="color:#ffffff">Female</span>
+            <input type="radio" id="othersid" name="gender" value="other" required><span style="color:#ffffff"> Others</span></div> <br>
+        <div><span style="color:#ffffff">SYSTOLIC BP:</span> <input type="number" id= "highid" name="SystolicBP" required> <span style="color:#ffffff">in mm/hg</span></div><br>
+                    <div><span style="color:#ffffff">DIASTOLIC BP:</span> <input type="number" id = "lowid" name="DiastolicBP" required><span style="color:#ffffff"> in mm/hg</span></div><br>
+        <!--<div><input type="submit" name="submit" onclick="myFunction()"></div>-->
+        <div><button type="button" name="submit" class="btn btn-primary" onclick="myFunction()" >Submit</button></div>
+        
+    </form>   
+</center>
+         </div>
+                 </center>
+             </div>
+                            <br>
+                            <br><br><br>
+                            <h4><p id="demo"> </p></h4>
+                            <script>
+                                    function myFunction() {
+                                    var high = document.getElementById("highid").value;
+                                    /*var high = document.forms["regform"]["high"];*/
+                                    var low = document.getElementById("lowid").value;
+                                    var name=document.getElementById("nameid").value;
+                                    var age=document.getElementById("ageid").value;
+                                    if(age<0 || age>120)
+                                    {
+                                        alert("Invalid Age Entered");
+                                    }
+                                    else if(name=="")
+                                    {
+                                        /*document.getElementById("demo").innerHTML="<center>Please Enter all values to get complete information</center>"*/
+                                        alert("Name field is required");
+                                    }
+                                    else if(age=="")
+                                    {
+                                        /*document.getElementById("demo").innerHTML="<center>Please Enter all values to get complete information</center>"*/
+                                        alert("Age field is required");
+                                    }
+                                    
+                                    else if(high=="")
+                                    {
+                                        /*document.getElementById("demo").innerHTML="<center>Please Enter all values to get complete information</center>"*/
+                                        alert("Systolic BP Readings field is required");
+                                    }
+                                    else if(low=="")
+                                    {
+                                        /*document.getElementById("demo").innerHTML="<center>Please Enter all values to get complete information</center>"*/
+                                        alert("Diastolic BP Readings field is required");
+                                    }
+                                    else
+                                    {
+                                    if((high<70 || high>=210) || (low<40 || low>=120) || high<0 || low<0)
+                                    {
+                                       alert("Abnormal Blood Pressure Readings.");
+                                    }
+                                    else if((high>=70 && high<=90) && (low>=40 && low<=60)){
+                                        document.getElementById("demo").innerHTML ="<center>Hi "+name+",<br>"+high+"/"+low+" is a Low Blood Pressure(HypoTension).<br><br>"+"<h5><p>Your blood pressure is lower than normal.Low blood pressure can cause fainting or dizziness because the brain doesn't receive enough blood.</p></h5><br>"+"Lead a healthy life style by "+"<a href='low.html'>Clicking Here</a>"+"</center>";
+                                    }
+                                    else if ((high>90 && high < 121) && (low>60 && low <= 85)) {
+                                        document.getElementById("demo").innerHTML  ="<center>Hi "+name+",<br>"+high+"/"+low+" is a Normal Blood Pressure.<br><br>"+"<h5><p>Follow Healthy diet to maintain the Optimal Blood Pressure.</p></h5></center>"; 
+                                    }
+                                    else if ((high>=121 && high <= 129) && low > 80 && low<=89) {
+                                        document.getElementById("demo").innerHTML  = "<center>Hi "+name+",<br>"+high+"/"+low+" is a Elevated Blood Pressure.<br><br>"+"<h5><p>Your blood pressure is elevated. It should be confirmed within 2 months. Your General Practitioner should advise you about lifestyle risk reduction and/or medication to lower your blood pressure.</p></h5><br>"+"Lead a healthy life style by "+"<a href='elevated.html'>Clicking Here</a>"+"</center>";
+                                    }
+                                    else if ((high>=130 && high <= 139) && (low>80 && low <=89)) {
+                                        document.getElementById("demo").innerHTML  = "<center>Hi "+name+",<br>"+high+"/"+low+" is a Stage-1 High Blood Pressure(Mild Hypertension).<br><br>"+"<h5><p>Your blood pressure is greater than normal.You may also need to see a specialist in this time. Your General Practitioner can advise you about lifestyle risk reduction and/or medication to lower your blood pressure.</p></h5><br>"+"Lead a healthy life style by "+"<a href='stage1.html'>Clicking Here</a>"+"</center>";
+                                    }
+                                    else if ((high>=140 && high<=159) && (low>=90 && low<=99)) {
+                                        document.getElementById("demo").innerHTML  ="<center>Hi "+name+",<br>"+high+"/"+low+" is a Stage-2 High Blood Pressure(Moderate Hypertension).<br><br>"+"<h5><p>Your blood pressure is greater than normal.You may also need to see a specialist in this time. Your General Practitioner can advise you about lifestyle risk reduction and/or medication to lower your blood pressure.</p></h5><br>"+"Lead a healthy life style by "+"<a href='stage2.html'>Clicking Here</a>"+"</center>";
+                                    }
+                                    else if((high>=160 && high<=179) && (low>=100 && low<=109)){
+                                        document.getElementById("demo").innerHTML ="<center>Hi "+name+",<br>"+high+"/"+low+" is a Stage-3 High Blood Pressure(Severe Hypertension).<br><br>"+"<h5><p>Your blood pressure is more greater than normal.You may also need to see a specialist in this time. Your General Practitioner can advise you about lifestyle risk reduction and/or medication to lower your blood pressure.</p></h5><br>"+"Lead a healthy life style by "+"<a href='stage3.html'>Clicking Here</a>"+"</center>";
+                                    }
+                                    else if((high>=180 && high<=209) && (low>=110 && low<=119)){
+                                        document.getElementById("demo").innerHTML ="<center>Hi "+name+",<br>"+high+"/"+low+" is a Stage-4 High Blood Pressure(Very Severe Hypertension).<br><br>"+"<h5><p>Your blood pressure is more greater than normal.you may also need to see a specialist in this time. Your General Practitioner can advise you about lifestyle risk reduction and/or medication to lower your blood pressure.</p></h5><br>"+"Lead a healthy life style by "+"<a href='stage4.html'>Clicking Here</a>"+"</center>";
+                                    }
+                                    else if(high>=130 && high<=139)
+                                    {
+                                        document.getElementById("demo").innerHTML  = "<center>Hi "+name+",<br>"+high+"/"+low+" is a Stage-1 High Blood Pressure(Mild Hypertension).<br><br>"+"<h5><p>Your blood pressure is greater than normal.You may also need to see a specialist in this time. Your General Practitioner can advise you about lifestyle risk reduction and/or medication to lower your blood pressure.</p></h5><br>"+"Lead a healthy life style by "+"<a href='stage1.html'>Clicking Here</a>"+"</center>";
+                                    }
+                                    else if(high>=140 && high<=159)
+                                    {
+                                        document.getElementById("demo").innerHTML  ="<center>Hi "+name+",<br>"+high+"/"+low+" is a Stage-2 High Blood Pressure(Moderate Hypertension).<br><br>"+"<h5><p>Your blood pressure is greater than normal.You may also need to see a specialist in this time. Your General Practitioner can advise you about lifestyle risk reduction and/or medication to lower your blood pressure.</p></h5><br>"+"Lead a healthy life style by "+"<a href='stage2.html'>Clicking Here</a>"+"</center>";
+                                    }
+                                    else if(high>=160 && high<=179)
+                                    {
+                                        document.getElementById("demo").innerHTML ="<center>Hi "+name+",<br>"+high+"/"+low+" is a Stage-3 High Blood Pressure(Severe Hypertension).<br><br>"+"<h5><p>Your blood pressure is more greater than normal.You may also need to see a specialist in this time. Your General Practitioner can advise you about lifestyle risk reduction and/or medication to lower your blood pressure.</p></h5><br>"+"Lead a healthy life style by "+"<a href='stage3.html'>Clicking Here</a>"+"</center>";
+                                    }
+                                    else if(high>=180 && high<=209)
+                                    {
+                                        document.getElementById("demo").innerHTML ="<center>Hi "+name+",<br>"+high+"/"+low+" is a Stage-4 High Blood Pressure(Very Severe Hypertension).<br><br>"+"<h5><p>Your blood pressure is more greater than normal.you may also need to see a specialist in this time. Your General Practitioner can advise you about lifestyle risk reduction and/or medication to lower your blood pressure.</p></h5><br>"+"Lead a healthy life style by "+"<a href='stage4.html'>Clicking Here</a>"+"</center>";
+                                    }
+                                    else if(high<90)
+                                    {
+                                         document.getElementById("demo").innerHTML ="<center>Hi "+name+",<br>"+high+"/"+low+" is a Low Blood Pressure(HypoTension).<br><br>"+"<h5><p>Your blood pressure is lower than normal.Low blood pressure can cause fainting or dizziness because the brain doesn't receive enough blood.</p></h5><br>"+"Lead a healthy life style by "+"<a href='low.html'>Clicking Here</a>"+"</center>";
+                                    }
+                                    else
+                                    {
+                                       document.getElementById("demo").innerHTML ="<center>Irreugular Blood Pressure Readings</center>";
+                                    }
+                                }
+                                    }   
+                            </script>
+                            
+                        </form>
+                   
+        
+        <br>
+        <br>
+        <!--<p align="center"><button type="submit" name="submit" class="btn btn-primary"">Submit</button></p>-->
+        <!--<p><button type="submit" name="submit" class="btn btn-primary">Submit</button></p>-->
+                        <br><br><br><br><br><br><br><br><br><br>
+            <footer>
+            <div class="container">
+                <p align="center">Copyrights Allowed. All Rights Reserved | Contact Us: +91 90000 00000</p>
+            </div>
+        </footer>  
+        
+    </body>
+</html>

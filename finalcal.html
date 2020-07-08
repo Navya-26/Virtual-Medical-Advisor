@@ -1,0 +1,69 @@
+<html>
+<head>
+            <title>Virtual Medical Adviser</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+            <script type="text/javascript">
+        
+        function myFunction() {
+            var high = document.forms["regform"]["high"];
+            var low = document.forms["regform"]["low"];               
+            if(high.value < 90 || low.value < 60){
+              document.getElementById("demo").innerHTML="hello"
+                }
+            else if((90 <= high.value < 121) && (60 <= low.value < 81)){
+             alert ("normal blood pressure");
+            }
+            else if(180 > high.value > 121  && 120> low.value > 81){
+                alert ("high blood pressure");
+            }
+			else if(high.value > 180 || low.value > 120){
+				alert("abnormal values");
+			}
+			
+            else {
+                alert("enter the values");
+                return false;
+            }
+        
+        }
+                                    
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html">Virtual Medical Adviser</a>
+                </div>
+            </div>
+        </nav>
+		<br><br>
+<center><h1>BP calculator</h1></center><br>
+<center>
+    <form name="regform" onsubmit="return myFunction()">
+        <div>name:<input type="text" name="FirstName" required></div><br>
+        <div>age: <input type="number" name="age" required></div><br>
+        <div>gender: <input type="radio" name="gender" value="male" required> Male
+            <input type="radio" name="gender" value="female" required> Female
+            <input type="radio" name="gender" value="other" required> Other</div> <br>
+        <div>systolic bp: <input type="number" id= "high" name="SystolicBP" required> in mm/hg</div><br>
+        <div>diastolic bp: <input type="number" id = "low" name="DiastolicBP" required> in mm/hg</div><br>
+        <div><input type="submit" name="submit" ></div>
+        <h4><p id="demo"></p></h4>
+ </form>   
+</center>
+
+
+
+</body>
+ 
+</html>
